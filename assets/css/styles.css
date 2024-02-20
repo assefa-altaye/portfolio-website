@@ -50,6 +50,17 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
+  /* 
+  --mt-0-25: 0.25rem;
+  --mt-0-5: 0.5rem;
+  --mt-0-75: 0.75rem;
+  --mt-1: 1rem;
+  --mt-1-5: 1.5rem;
+  --mt-2: 2rem;
+  --mt-2-5: 2.5rem;
+  --mt-3: 3rem;
+  margin-top: var(--mt-1); */
+
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
