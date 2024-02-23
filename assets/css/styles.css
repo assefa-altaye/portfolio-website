@@ -351,9 +351,11 @@ img {
 .about__img {
   /* display: flex; */
   width: 200px;
+  display: block;
+  margin: 0 auto;
   border-radius: 0.5rem;
-  justify-content: center;
-  align-self: center;
+  /* justify-content: center;
+  align-self: center; */
 }
 
 .about__decription {
@@ -388,7 +390,38 @@ img {
   justify-content: center;
 }
 /*==================== SKILLS ====================*/
-
+/* This style is used to display small Icons of skills/teck stack  */
+/* div{
+  width:90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+img{
+  width: 50%;
+  height: 50%;
+} */
+.skills__icon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* row-gap: 5px; */
+}
+.skills__data {
+  display: flex;
+  row-gap: 1rem;
+}
+.skills__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  /* row-gap: 1rem; */
+  /* flex-wrap: wrap; */
+  /* flex-grow: 0; */
+}
 /*==================== QUALIFICATION ====================*/
 
 /*==================== SERVICES ====================*/
