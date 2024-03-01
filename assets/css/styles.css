@@ -172,10 +172,12 @@ img {
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  /* font-size: 1.1rem; */
 }
 
 .nav__logo:hover {
   color: var(--first-color);
+  /* font-size: 1.6rem; */
 }
 
 .nav__toggle {
@@ -328,9 +330,10 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 2rem;
   font-weight: var(--font-medium);
+  text-wrap: nowrap;
   /* margin: 0.5rem; */
 }
 
@@ -349,13 +352,10 @@ img {
 /*==================== ABOUT ====================*/
 
 .about__img {
-  /* display: flex; */
   width: 200px;
   display: block;
   margin: 0 auto;
   border-radius: 0.5rem;
-  /* justify-content: center;
-  align-self: center; */
 }
 
 .about__decription {
@@ -393,12 +393,18 @@ img {
 .skills__container {
   row-gap: 0;
 }
+/* .skills__content {
+  display: flex;
+  justify-content: space-between;
+} */
+
 .skills__header {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-2-5);
   cursor: pointer;
 }
+
 .skills__arrow {
   font-size: 2rem;
   color: var(--first-color);
@@ -410,17 +416,20 @@ img {
   font-size: var(--h3-font-size);
 }
 
-/* .skills__close{
-  height: 0;
-  overflow: hidden;
-} */
-.skills__open {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 1.5rem;
+  /* display: none; */
 }
 
-.skills__open .skills__arrow {
-  transform: rotate(-180deg);
+.about__skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .about__skills-img {
@@ -431,43 +440,14 @@ img {
 .about__skills-img:hover {
   transform: translateY(-0.5rem);
 }
-.about__skills-content {
-  grid-template-columns: repeat(4, max-content);
-  justify-content: center;
-  align-items: center;
-  gap: 2rem 1.5rem;
+
+/* .skills__close .skills__list{
+  display: none;
+}  */
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
 }
-/* This style is used to display small Icons of skills/teck stack  */
-/* div{
-  width:90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-img{
-  width: 50%;
-  height: 50%;
-} */
-/* .skills__icon-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  
-} */
-/* .skills__data {
-  display: flex;
-  row-gap: 1rem;
-}
-.skills__icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px; */
-/* row-gap: 1rem; */
-/* flex-wrap: wrap; */
-/* flex-grow: 0; */
-/* } */
 
 /*==================== QUALIFICATION ====================*/
 
