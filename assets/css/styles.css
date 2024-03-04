@@ -331,7 +331,7 @@ img {
   background-color: var(--first-color);
   color: #fff;
   padding: 0.5rem 2rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   font-weight: var(--font-medium);
   text-wrap: nowrap;
   /* margin: 0.5rem; */
