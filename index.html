@@ -129,12 +129,20 @@
               </svg>
             </div>
             <div class="home__data">
-              <h1 class="home__title">Hi, I'm Assefa</h1>
-              <h3 class="home__subtitle">Full-Stack Web Developer</h3>
+              <h1 class="home__title">
+                Hi, I'm <br /><span class="home__name--title"
+                  >Assefa Altaye</span
+                >
+              </h1>
+              <h3 class="home__subtitle">
+                I'm a full-stack web developer with a strong foundation in
+                front-end and back-end technologies.
+              </h3>
+              <!-- <h3 class="home__subtitle">Full-Stack Web Developer</h3>
               <p class="home__description">
                 I'm a full-stack web developer with a strong foundation in
                 front-end and back-end technologies.
-              </p>
+              </p> -->
               <a href="#contact" class="button button--flex">
                 Contact Me <i class="fa-solid fa-envelope button__icon"></i>
               </a>
@@ -416,12 +424,18 @@
 
         <div class="qualification__container container">
           <div class="qualification__tabs">
-            <div class="qualification__button button--flex">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
               <i class="fa-solid fa-graduation-cap qualification__icon"></i>
               Education
             </div>
 
-            <div class="qualification__button button--flex">
+            <div
+              class="qualification__button button--flex"
+              data-target="#experience"
+            >
               <i class="fa-solid fa-briefcase qualification__icon"></i>
               Experience
             </div>
@@ -429,83 +443,165 @@
 
           <div class="qualification__sections">
             <!--==================== QUALIFICATION CONTENT 1====================-->
-            <div class="qualification__content"></div>
-            <!--==================== QUALIFICATION 1 ====================-->
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title">Software Engineer</h3>
-                <span class="qualification__subtitle"
-                  >Ministry of Trade-Ethiopia</span
-                >
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2011-2014
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Front End Service</h3>
+                  <span class="qualification__subtitle">Walmart</span>
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2023-present
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
                 </div>
               </div>
 
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Sr Technology Support Officer
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Addis Bank-Ethiopia</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021-2023
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <!--==================== QUALIFICATION 2 ====================-->
-            <div class="qualification__data">
-              <div></div>
-
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Programmer</h3>
+                  <span class="qualification__subtitle"
+                    >Addis Bank-Ethiopia</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2015-2021
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
               </div>
+              <!--==================== QUALIFICATION 4 ====================-->
+              <div class="qualification__data">
+                <div></div>
 
-              <div>
-                <h3 class="qualification__title">Programmer</h3>
-                <span class="qualification__subtitle"
-                  >Addis International Bank-Ethiopia</span
-                >
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2015-2021
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Software Engineer</h3>
+                  <span class="qualification__subtitle"
+                    >Ministry of Trade-Ethiopia</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2011-2014
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!--==================== QUALIFICATION 3 ====================-->
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title">
-                  Sr Technology Support Officer
-                </h3>
-                <span class="qualification__subtitle"
-                  >Addis International Bank-Ethiopia</span
-                >
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2021-2023
+            <!--==================== QUALIFICATION CONTENT 2====================-->
+            <div class="qualification__content" data-content id="experience">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">2Front End Service</h3>
+                  <span class="qualification__subtitle">Walmart</span>
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2023-present
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
                 </div>
               </div>
 
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-            </div>
-            <!--==================== QUALIFICATION 4 ====================-->
-            <div class="qualification__data">
-              <div></div>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
 
-              <div>
-                <span class="qualification__rounder"></span>
-                <!-- <span class="qualification__line"></span> -->
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    2Sr Technology Support Officer
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Addis Bank-Ethiopia</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021-2023
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <h3 class="qualification__title">Frelance</h3>
-                <h3 class="qualification__title">Front End Service TA</h3>
-                <span class="qualification__subtitle">Walmart</span>
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2023-present
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">2Programmer</h3>
+                  <span class="qualification__subtitle"
+                    >Addis Bank-Ethiopia</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2015-2021
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 4 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">2Software Engineer</h3>
+                  <span class="qualification__subtitle"
+                    >Ministry of Trade-Ethiopia</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2011-2014
+                  </div>
                 </div>
               </div>
             </div>
