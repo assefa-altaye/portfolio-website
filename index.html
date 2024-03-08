@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <!-- font awesome CDN -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,6 +19,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- SwiperJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Assefa Altaye</title>
   </head>
@@ -442,12 +449,95 @@
           </div>
 
           <div class="qualification__sections">
-            <!--==================== QUALIFICATION CONTENT 1====================-->
+            <!--==================== EDUCATION CONTENT====================-->
             <div
               class="qualification__content qualification__active"
               data-content
               id="education"
             >
+              <!--==================== EDUCATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Full-Stack Web & Mobile Development
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Nucamp Coding Bootcamp</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Sep 2023
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== EDUCATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Programming with Javascript by Meta
+                  </h3>
+                  <span class="qualification__subtitle">Coursera</span>
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Dec 2023
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== EDUCATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Msc Software Engineering</h3>
+                  <span class="qualification__subtitle"
+                    >HiLCoE School of Computer Science &
+                    Technology-Ethiopia</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Mar 2021
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== EDUCATION 4 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">BSc Computer Science</h3>
+                  <span class="qualification__subtitle"
+                    >Addis Ababa University- Ethiopia</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Aug 2009
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== EXPERIENCE CONTENT====================-->
+            <div class="qualification__content" data-content id="experience">
               <!--==================== QUALIFICATION 1 ====================-->
               <div class="qualification__data">
                 <div>
@@ -525,95 +615,103 @@
                 </div>
               </div>
             </div>
-
-            <!--==================== QUALIFICATION CONTENT 2====================-->
-            <div class="qualification__content" data-content id="experience">
-              <!--==================== QUALIFICATION 1 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">2Front End Service</h3>
-                  <span class="qualification__subtitle">Walmart</span>
-                  <div class="qualification__calendar">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    2023-present
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-
-              <!--==================== QUALIFICATION 2 ====================-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-
-                <div>
-                  <h3 class="qualification__title">
-                    2Sr Technology Support Officer
-                  </h3>
-                  <span class="qualification__subtitle"
-                    >Addis Bank-Ethiopia</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    2021-2023
-                  </div>
-                </div>
-              </div>
-
-              <!--==================== QUALIFICATION 3 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">2Programmer</h3>
-                  <span class="qualification__subtitle"
-                    >Addis Bank-Ethiopia</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    2015-2021
-                  </div>
-                </div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-              <!--==================== QUALIFICATION 4 ====================-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                </div>
-
-                <div>
-                  <h3 class="qualification__title">2Software Engineer</h3>
-                  <span class="qualification__subtitle"
-                    >Ministry of Trade-Ethiopia</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    2011-2014
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <!--==================== PROJECTS ====================-->
-      <section class="projects section" id="projects"></section>
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most Recent Projects</span>
+
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/little _lemon_website.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">1Little Lemon Restaurant</h3>
+                <p class="portfolio__description">
+                  This is fully functional restaurant website developed as part
+                  of Meta Front-End Development course.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/little _lemon_website.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">2Little Lemon Restaurant</h3>
+                <p class="portfolio__description">
+                  This is fully functional restaurant website developed as part
+                  of Meta Front-End Development course.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 3 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/little _lemon_website.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">3Little Lemon Restaurant</h3>
+                <p class="portfolio__description">
+                  This is fully functional restaurant website developed as part
+                  of Meta Front-End Development course.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- Swwiper Arrows -->
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-angle-right swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-angle-left swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact"></section>
     </main>
+    <!--==================== SWIPPERJS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--==================== SWIPPERJS ====================-->
     <script src="assets/js/script.js"></script>
   </body>
 </html>

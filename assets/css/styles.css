@@ -352,6 +352,9 @@ img {
   display: inline-flex;
   align-items: center;
 }
+.button--small {
+  padding: 0.75rem 1 rem;
+}
 /*==================== ABOUT ====================*/
 
 .about__img {
@@ -531,11 +534,35 @@ img {
 .qualification__button.qualification__active {
   color: var(--first-color);
 }
-/*==================== SERVICES ====================*/
-
-/* Active Modal */
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container {
+  overflow: initial;
+}
+
+.portfolio__content {
+  padding: 0 1.5rem;
+}
+
+.portfolio__img {
+  width: 265px;
+  /* border-radius: 0.5rem; */
+  border-radius: 1rem;
+  justify-self: center;
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
 
 /*==================== PROJECT IN MIND ====================*/
 
