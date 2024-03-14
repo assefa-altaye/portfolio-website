@@ -72,7 +72,21 @@
 /*========== Variables Dark theme ==========*/
 
 /*========== Button Dark/Light ==========*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
 
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -153,10 +167,9 @@ img {
   position: fixed;
   top: 0;
   right: 0;
-  /* bottom: 0;
-  left: 0; */
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  /* background-color: transparent; */
 }
 
 /*==================== NAV ====================*/
@@ -193,12 +206,12 @@ img {
     position: fixed;
     /* top: 0; */
     top: -100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 70%;
     background-color: var(--body-color);
     padding: 4rem 1.5rem 2rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.9);
-    border-radius: 0 0 1.5rem 1.5rem;
+    border-radius: 0 0 0 0.5rem;
     transition: 0.3s;
   }
 }
@@ -212,7 +225,7 @@ img {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav__link:hover {
@@ -247,6 +260,9 @@ img {
 
 /* Change background header */
 
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.5);
+}
 /*==================== HOME ====================*/
 .home__container {
   gap: 1rem;
@@ -257,7 +273,7 @@ img {
 }
 .home__content {
   grid-template-columns: 0.5fr 3fr;
-  padding-top: 4rem;
+  padding-top: 2.6rem;
   align-items: center;
 }
 
@@ -268,7 +284,7 @@ img {
 }
 
 .home__social-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--first-color);
 }
 
@@ -676,9 +692,30 @@ img {
 }
 
 /*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
 
+.scrollup:hover {
+  background-color: var(--first-color-alt);
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
 /* Show scroll */
-
+.show-scroll {
+  bottom: 3rem;
+}
 /*========== SCROLL BAR ==========*/
 
 /*==================== MEDIA QUERIES ====================*/

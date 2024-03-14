@@ -32,45 +32,27 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Assefa</a>
+        <a href="#home" class="nav__logo">Assefa</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <!-- <i class="fa-solid fa-house"></i>  -->
-                Home
-              </a>
+              <a href="#home" class="nav__link active-link"> Home </a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <!-- <i class="fa-solid fa-user nav__icon"></i>  -->
-                About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <!-- <i class="fa-solid fa-user nav__icon"></i>  -->
-                Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">
-                <!-- <i class="fa-solid fa-image nav__icon"></i>  -->
-                Projects
-              </a>
+              <a href="#about" class="nav__link"> About </a>
             </li>
             <!-- <li class="nav__item">
-              <a href="#experience" class="nav__link">
-                <i class="fa-solid fa-briefcase nav__icon"></i> 
-                Experience
-              </a>
+              <a href="#skills" class="nav__link"> Skills </a>
             </li> -->
             <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <!-- <i class="fa-solid fa-envelope nav__icon"></i>  -->
-                Contact
-              </a>
+              <a href="#portfolio" class="nav__link"> Projects </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link"> Experience </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"> Contact </a>
             </li>
           </ul>
           <i class="fa-solid fa-x nav__close" id="nav-close"></i>
@@ -216,7 +198,7 @@
 
       <!--==================== SKILLS ====================-->
 
-      <section class="skills section" id="skills">
+      <section class="skills section">
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
 
@@ -424,12 +406,103 @@
         </div>
       </section>
 
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most Recent Projects</span>
+
+        <div class="portfolio__container container grid swiper">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/little _lemon_website.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">1Little Lemon Restaurant</h3>
+                <p class="portfolio__description">
+                  This is fully functional restaurant website developed as part
+                  of Meta Front-End Development course.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/little _lemon_website.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">2Little Lemon Restaurant</h3>
+                <p class="portfolio__description">
+                  This is fully functional restaurant website developed as part
+                  of Meta Front-End Development course.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 3 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/little _lemon_website.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">3Little Lemon Restaurant</h3>
+                <p class="portfolio__description">
+                  This is fully functional restaurant website developed as part
+                  of Meta Front-End Development course.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swwiper Arrows -->
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-angle-right swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-angle-left swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Swwiper Pegination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
       <!--==================== QUALIFICATION ====================-->
       <section class="qualification section" id="qualification">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My Personal Journey</span>
 
-        <div class="qualification__container container">
+        <div class="qualification__container container grid">
           <div class="qualification__tabs">
             <div
               class="qualification__button button--flex qualification__active"
@@ -619,96 +692,6 @@
         </div>
       </section>
 
-      <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Most Recent Projects</span>
-
-        <div class="portfolio__container container swiper">
-          <div class="swiper-wrapper">
-            <!--==================== PORTFOLIO 1 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/little _lemon_website.png"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">1Little Lemon Restaurant</h3>
-                <p class="portfolio__description">
-                  This is fully functional restaurant website developed as part
-                  of Meta Front-End Development course.
-                </p>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="fa-solid fa-arrow-right button__icon"></i
-                ></a>
-              </div>
-            </div>
-            <!--==================== PORTFOLIO 2 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/little _lemon_website.png"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">2Little Lemon Restaurant</h3>
-                <p class="portfolio__description">
-                  This is fully functional restaurant website developed as part
-                  of Meta Front-End Development course.
-                </p>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="fa-solid fa-arrow-right button__icon"></i
-                ></a>
-              </div>
-            </div>
-            <!--==================== PORTFOLIO 3 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/little _lemon_website.png"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">3Little Lemon Restaurant</h3>
-                <p class="portfolio__description">
-                  This is fully functional restaurant website developed as part
-                  of Meta Front-End Development course.
-                </p>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="fa-solid fa-arrow-right button__icon"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Swwiper Arrows -->
-          <div class="swiper-button-next">
-            <i class="fa-solid fa-angle-right swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="fa-solid fa-angle-left swiper-portfolio-icon"></i>
-          </div>
-
-          <!-- Swwiper Pegination -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
       <!--==================== CONTACT ME====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
@@ -797,6 +780,12 @@
         <div class="footer__copy">&copy; 2024 Assefa Altaye</div>
       </div>
     </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+
     <!--==================== SWIPPERJS ====================-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--==================== SWIPPERJS ====================-->

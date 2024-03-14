@@ -19,6 +19,28 @@ if (navClose) {
   });
 }
 
+/*==================== REMOVE NAV MENU WHEN CLICKED OUTSIDE  ====================*/
+// function toggleMenu() {
+//   var menu = document.getElementById("nav-menu");
+//   menu.style.display === "none" ? menu.style.display = "block" : menu.style.display = "none";
+// }
+
+// function closeMenu() {
+//   var menu = document.getElementById("nav-menu");
+//   menu.style.display = "none";
+// }
+
+// document.addEventListener("click", function(event) {
+//   var menu = document.getElementById("nav-menu");
+//   var menuToggle = document.querySelector(".menu-toggle");
+//   var isClickInsideMenu = menu.contains(event.target);
+//   var isClickOnToggle = menuToggle.contains(event.target);
+
+//   if (!isClickInsideMenu && !isClickOnToggle) {
+//     menu.style.display = "none";
+//   }
+// });
+
 /*==================== REMOVE MENU MOBILE ====================*/
 // When we click on each nav__link, we remove the show-menu class
 const navLink = document.querySelectorAll('.nav__link');
@@ -90,6 +112,7 @@ const sections = document.querySelectorAll('section[id]');
 
 function scrollActive() {
   const scrollY = window.pageYOffset;
+  // const scrollY = window.onscroll;
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
@@ -112,12 +135,19 @@ window.addEventListener('scroll', scrollActive);
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
   const nav = document.getElementById('header');
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 200) nav.classList.add('scroll-header');
+  // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+  if (this.scrollY >= 80) nav.classList.add('scroll-header');
   else nav.classList.remove('scroll-header');
 }
 window.addEventListener('scroll', scrollHeader);
 
 /*==================== SHOW SCROLL UP ====================*/
+function scrollUp() {
+  const scrollUp = document.getElementById('scroll-up');
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+  else scrollUp.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollUp);
 
 /*==================== DARK LIGHT THEME ====================*/
